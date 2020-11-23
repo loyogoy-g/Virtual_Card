@@ -29,4 +29,4 @@ class FourthInline(admin.TabularInline):
 class StudentAdmin(admin.ModelAdmin):
     list_display = ("Name", "LRN", "Status")
     inlines = [FirstInline]
-    list_filter = ("Status",)
+    list_filter = ("Status", "Section")
